@@ -1,0 +1,37 @@
+---
+layout: compress
+---
+
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+<meta charset="UTF-8">
+
+  {% include head.html %}
+
+  <body>
+
+
+
+
+    <main class="page-content" aria-label="Content">
+
+    {% include header.html %}
+    {% include intro.html %}
+    {% include sider.html %}
+    {% include gallery.html %}
+    {% include tabs.html %}
+
+    
+      <div class="wrapper">
+        {{ content }}
+      </div>
+
+
+
+    </main>
+
+    {% include footer.html %}
+
+  </body>
+
+</html>
